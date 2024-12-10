@@ -9,18 +9,18 @@ export default function Education() {
   return (
     <section
       id="education"
-      className="flex flex-col w-full h-[80vh] snap-start scroll-mt-[10vh] items-center"
+      className="flex flex-col w-full snap-start scroll-mt-[10vh] items-center"
     >
       {/* Title */}
       <div
         id="education-header"
-        className="flex w-full h-[10%] justify-center items-center"
+        className="flex w-full h-[10vh] justify-center items-center"
       >
         <h2 className="text-4xl">Education</h2>
       </div>
 
       {/* Timeline */}
-      <div id="education-content" className="flex flex-col w-full h-[90%]">
+      <div id="education-content" className="flex flex-col w-full">
         <Timeline institutions={EducationContent} />
 
         {/* Remarks */}
