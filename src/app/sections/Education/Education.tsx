@@ -20,7 +20,7 @@ export default function Education() {
       </div>
 
       {/* Timeline */}
-      <div id="education-content" className="flex flex-col w-full">
+      <div id="education-content" className="flex flex-col w-full my-8">
         <Timeline institutions={EducationContent} />
 
         {/* Remarks */}

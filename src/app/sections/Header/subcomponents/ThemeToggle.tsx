@@ -17,7 +17,7 @@ export default function ThemeToggle() {
     >
       {/* Toggle Circle */}
       <div
-        className={`w-6 h-6 rounded-full bg-[#fefbe6] dark:bg-[#171602] flex items-center justify-center transition-all duration-300 ${
+        className={`w-6 h-6 rounded-full bg-[#fefbe6] dark:bg-[#171602] shadow-md flex items-center justify-center transition-all duration-300 ${
           isDark ? "transform translate-x-8" : "transform translate-x-0"
         }`}
       >

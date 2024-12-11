@@ -12,17 +12,17 @@ export default function TestimonialBox({
   headline: string;
 }) {
   return (
-    <div className="flex flex-col w-80 bg-white shadow-lg rounded-lg p-6 gap-6 relative overflow-hidden">
+    <div className="flex flex-col w-80 bg-[#fae779] shadow-lg rounded-lg p-6 gap-6 relative overflow-hidden">
       {/* Decorative Elements */}
-      <div className="absolute -top-6 -left-6 w-24 h-24 bg-blue-100 rounded-full z-0"></div>
-      <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-blue-200 rounded-full z-0"></div>
+      <div className="absolute -top-6 -left-6 w-24 h-24 bg-[#fff4b9] rounded-full z-0"></div>
+      <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-[#fff4b9] rounded-full z-0"></div>
 
       {/* Profile Picture */}
       <div className="relative z-10 mx-auto">
         <img
           src={profilePicture}
           alt={name}
-          className="w-24 h-24 rounded-full border-4 border-blue-500 shadow-md"
+          className="w-24 h-24 rounded-full border-4 border-[#fff4b9] shadow-md"
         />
       </div>
 
@@ -40,7 +40,7 @@ export default function TestimonialBox({
       </div>
 
       {/* Read More Button */}
-      <button className="relative z-10 mt-4 px-4 py-2 text-sm bg-blue-500 text-white rounded hover:bg-blue-600 transition">
+      <button className="relative z-10 mt-4 px-4 py-2 text-sm bg-[#fff9d5] text-black rounded shadow-md hover:bg-[#fdee9f] transition">
         Read More
       </button>
     </div>

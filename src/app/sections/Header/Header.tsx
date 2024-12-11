@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useTheme } from "@/context/ThemeContext";
 import HeaderContent from "./HeaderContent";
 import ThemeToggle from "./subcomponents/ThemeToggle";
@@ -17,6 +18,30 @@ export default function Header({
   const { isDark } = useTheme();
 
   const navigationItems = HeaderContent[language];
+
+  const [activeSection, setActiveSection] = useState<string>("");
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section[id]");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        threshold: 0.6, // Trigger when 60% of the section is in view
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
 
   return (
     <header className="sticky top-0 z-20 flex w-full h-[10vh] justify-between items-center px-10 bg-[#fefbe6] dark:bg-[#171602]">
@@ -36,12 +61,16 @@ export default function Header({
       </div>
 
       {/* Navigation Links */}
-      <nav className="flex gap-2 flex-3 basis-3/5 justify-center">
+      <nav className="flex gap-4 justify-center items-center flex-3 basis-3/5 h-full">
         {navigationItems.map((item) => (
           <a
             key={item.id}
             href={`#${item.id}`}
-            className="text-black dark:text-white lg:text-sm 2xl:text-base hover:text-gray-400 transition duration-300 flex justify-center flex-1 basis-1/7"
+            className={`relative flex justify-center items-center flex-1 basis-1/7 h-full lg:text-sm 2xl:text-base transition duration-300 ${
+              activeSection === item.id
+                ? "text-black dark:text-yellow-400 font-bold scale-110 border-b-2 border-black dark:border-yellow-400"
+                : "text-gray-600 dark:text-gray-400 hover:scale-110 hover:text-black dark:hover:text-yellow-400"
+            }`}
           >
             {item.label}
           </a>

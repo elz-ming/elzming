@@ -22,7 +22,7 @@ export default function About({ language }: { language: Language }) {
           About <del>Us</del> Me
         </h2>
       </div>
-      <div id="about-content" className="flex w-full gap-8 px-8">
+      <div id="about-content" className="flex w-full gap-8 px-8 my-8">
         {content.map((card, index) => (
           <NameCard
             key={index}
