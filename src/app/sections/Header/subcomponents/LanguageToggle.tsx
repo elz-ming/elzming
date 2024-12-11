@@ -51,7 +51,7 @@ export default function LanguageToggle({
           className={`flex items-center justify-center flex-1 basis-1/3 p-1 rounded-full text-xs font-bold transition-colors duration-300 ${
             option.isActive
               ? "bg-[#fefbe6] dark:bg-[#171602] shadow-md text-black dark:text-yellow-400"
-              : "bg-transparent text-gray-800"
+              : "bg-transparent text-gray-800 dark:text-gray-400"
           }`}
           style={{
             transition: "background-color 0.3s ease, color 0.3s ease", // Inline transition
