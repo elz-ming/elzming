@@ -1,9 +1,9 @@
 export default function Contact() {
   return (
-    <section id="contact" className="h-[80vh] snap-start scroll-mt-[10vh]">
+    <section id="contact" className="snap-start scroll-mt-[10vh]">
       <div
         id="contact-header"
-        className="flex w-full h-[10%] justify-center items-center"
+        className="flex w-full h-[10vh] justify-center items-center"
       >
         <h2 className="text-4xl">
           Contact <s>Us</s> Me
@@ -11,7 +11,7 @@ export default function Contact() {
       </div>
       <div
         id="contact-content"
-        className="flex w-full h-[90%] items-center"
+        className="flex w-full h-[80vh] items-center"
       ></div>
     </section>
   );

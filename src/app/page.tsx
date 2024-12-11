@@ -44,7 +44,7 @@ export default function Home() {
 
         <Projects />
 
-        <Testimonials />
+        <Testimonials language={language} />
 
         <Contact />
       </main>

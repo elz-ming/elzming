@@ -14,8 +14,12 @@ export default function TimelineItem({
   isRight?: boolean;
 }) {
   return (
-    <div className={`flex w-full ${isRight ? "justify-end" : "justify-start"}`}>
-      <div className="relative flex flex-col w-[45%] p-4 bg-gray-200 rounded-lg shadow-md">
+    <div
+      className={`flex w-full ${
+        isRight ? "justify-end" : "justify-start"
+      } my-8`}
+    >
+      <div className="relative flex flex-col w-[45%] p-4 bg-[#fae779] rounded-lg shadow-md">
         {/* Year */}
         <div className="absolute -top-8 text-xl font-semibold">{period}</div>
         {/* Content */}

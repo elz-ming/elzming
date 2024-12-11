@@ -9,7 +9,7 @@ export default function Timeline({
   return (
     <div className="flex justify-center items-center">
       {/* Horizontal Line */}
-      <div className="absolute h-3 bg-gray-300 w-full"></div>
+      <div className="absolute h-3 bg-[#fae779] w-full"></div>
 
       {/* Circles */}
       <div className="flex w-full justify-center">

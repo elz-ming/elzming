@@ -37,9 +37,9 @@ export default function HeroImages({ images }: HeroImagesProps) {
                   : "hidden"
               } ${
                 isLeft
-                  ? "md:-translate-x-40 2xl:-translate-x-60"
+                  ? "lg:-translate-x-40 2xl:-translate-x-60"
                   : isRight
-                  ? "md:translate-x-40 2xl:translate-x-60"
+                  ? "lg:translate-x-40 2xl:translate-x-60"
                   : "translate-x-0"
               }`}
             >

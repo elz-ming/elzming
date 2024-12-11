@@ -1,8 +1,11 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { ThemeProvider } from "@/context/ThemeContext";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 export const metadata = {
   title: "Edmund Lin Zhenming",
@@ -16,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-white dark:bg-black text:black dark:text-white`}
+        className={`${poppins.className} bg-[#fefbe6] dark:bg-[#171602] text-black dark:text-white`}
       >
         <ThemeProvider>{children}</ThemeProvider>
       </body>

@@ -19,20 +19,20 @@ export default function Experience() {
         className="relative flex flex-col w-full items-center"
       >
         {/* Timeline */}
-        <div className="absolute w-2 bg-gray-300 h-full"></div>
+        <div className="absolute w-2 bg-[#fdee9f] h-full"></div>
 
         {/* Timeline Items */}
         <div className="relative w-full flex flex-col gap-10 px-20">
           {ExperienceContent.map((item, index) => (
             <div
               key={index}
-              className={`relative flex w-full items-center ${
+              className={`relative flex w-full items-start ${
                 index % 2 === 0 ? "justify-start" : "justify-end"
               }`}
             >
               {/* Circle */}
               <div
-                className={`absolute left-1/2 transform -translate-x-1/2 w-8 aspect-square bg-gray-300 rounded-full`}
+                className={`absolute left-1/2 transform -translate-x-1/2 w-8 aspect-square bg-[#fae779] rounded-full shadow-md`}
               ></div>
 
               {/* Timeline Item */}
