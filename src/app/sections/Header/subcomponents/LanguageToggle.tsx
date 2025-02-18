@@ -36,30 +36,33 @@ export default function LanguageToggle({
   const languageOptions = getLanguageText();
 
   return (
-    <button
-      onClick={toggleLanguage}
-      className="flex items-center justify-center w-24 h-8 p-1 gap-1 bg-[#fae779] dark:bg-gray-600 rounded-full relative"
-      style={{
-        boxShadow: isDark
-          ? "inset 0 0 4px rgba(0, 0, 0, 0.5)" // Dark mode: Black shadow
-          : "inset 0 0 4px rgba(0, 0, 0, 0.5)", // Light mode: White shadow
-      }}
-    >
-      {languageOptions.map((option, index) => (
-        <div
-          key={index}
-          className={`flex items-center justify-center flex-1 basis-1/3 p-1 rounded-full text-xs font-bold transition-colors duration-300 ${
-            option.isActive
-              ? "bg-[#fefbe6] dark:bg-[#171602] shadow-md text-black dark:text-yellow-400"
-              : "bg-transparent text-gray-800 dark:text-gray-400"
-          }`}
-          style={{
-            transition: "background-color 0.3s ease, color 0.3s ease", // Inline transition
-          }}
-        >
-          {option.label}
-        </div>
-      ))}
-    </button>
+    <div className="flex justify-center items-center col-span-1 sm:col-span-2 xl:col-span-3">
+      <button
+        onClick={toggleLanguage}
+        className="flex items-center justify-center w-24 h-8 sm:w-36 sm:h-12 gap-2 bg-[#fae779] dark:bg-gray-600 rounded-full relative"
+        style={{
+          boxShadow: isDark
+            ? "inset 0 0 4px rgba(0, 0, 0, 0.5)" // Dark mode: Black shadow
+            : "inset 0 0 4px rgba(0, 0, 0, 0.5)", // Light mode: White shadow
+        }}
+      >
+        {/* Toggle Circle */}
+        {languageOptions.map((option, index) => (
+          <div
+            key={index}
+            className={`flex items-center justify-center aspect-square w-6 h-6 sm:w-10 sm:h-10 p-1 rounded-full text-xs sm:text-lg font-bold transition-colors duration-300 ${
+              option.isActive
+                ? "bg-[#fefbe6] dark:bg-[#171602] shadow-md text-black dark:text-yellow-400"
+                : "bg-transparent text-gray-800 dark:text-gray-400"
+            }`}
+            style={{
+              transition: "background-color 0.3s ease, color 0.3s ease", // Inline transition
+            }}
+          >
+            {option.label}
+          </div>
+        ))}
+      </button>
+    </div>
   );
 }

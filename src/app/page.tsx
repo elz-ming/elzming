@@ -32,8 +32,8 @@ export default function Home() {
         id="scroll-container"
         className="flex flex-col w-full h-full snap-y snap-mandatory scroll-smooth gap-[5vh]"
       >
-        <Hero language={language} />
-
+        {/* <Hero language={language} /> */}
+        {/* 
         <About language={language} />
 
         <Education />
@@ -46,7 +46,7 @@ export default function Home() {
 
         <Testimonials language={language} />
 
-        <Contact />
+        <Contact /> */}
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
     </>
