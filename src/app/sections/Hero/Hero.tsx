@@ -1,11 +1,8 @@
 "use client";
 
-import HeroImages from "./subcomponents/HeroImages";
-import CompanyLogos from "./subcomponents/CompanyLogos";
-import HeroContent, {
-  HeroImages as ImageData,
-  CompanyLogos as LogoData,
-} from "./HeroContent";
+// import HeroImages from "./subcomponents/HeroImages";
+// import CompanyLogos from "./subcomponents/CompanyLogos";
+import HeroContent from "./HeroContent";
 
 export type Language = "English" | "Chinese" | "Malay";
 

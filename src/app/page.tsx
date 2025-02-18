@@ -4,13 +4,13 @@ import { useState } from "react";
 
 import Header from "@/sections/Header/Header"; // Import Header
 import Hero from "@/sections/Hero/Hero";
-import About from "@/sections/About/About";
-import Education from "@/sections/Education/Education";
-import Experience from "@/sections/Experience/Experience";
-import Skills from "@/sections/Skills/Skills";
-import Projects from "@/sections/Projects/Projects";
-import Testimonials from "./sections/Testimonials/Testimonials";
-import Contact from "./sections/Contact/Contact";
+// import About from "@/sections/About/About";
+// import Education from "@/sections/Education/Education";
+// import Experience from "@/sections/Experience/Experience";
+// import Skills from "@/sections/Skills/Skills";
+// import Projects from "@/sections/Projects/Projects";
+// import Testimonials from "./sections/Testimonials/Testimonials";
+// import Contact from "./sections/Contact/Contact";
 
 type Language = "English" | "Chinese" | "Malay";
 
