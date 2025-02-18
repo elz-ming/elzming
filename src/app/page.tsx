@@ -32,9 +32,9 @@ export default function Home() {
         id="scroll-container"
         className="flex flex-col w-full h-full snap-y snap-mandatory scroll-smooth gap-[5vh]"
       >
-        {/* <Hero language={language} /> */}
-        {/* 
-        <About language={language} />
+        <Hero language={language} />
+
+        {/* <About language={language} />
 
         <Education />
 

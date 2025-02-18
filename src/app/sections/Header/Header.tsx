@@ -20,7 +20,7 @@ export default function Header({
       {/* Title */}
       <div
         id="title"
-        className="flex justify-center items-center h-full col-span-2 sm:col-span-4 xl:col-span-6"
+        className="flex justify-start items-center h-full col-span-2 sm:col-span-4 xl:col-span-6"
       >
         <h1 className="text-black text-[32px] sm:text-[40px] xl:text-[48px] dark:text-white">
           ELZ MING

@@ -1,17 +1,20 @@
 export const HeroContent: Record<
   "English" | "Chinese" | "Malay",
-  { title: string; subtitle: string }
+  { prefix: string; title: string; subtitle: string }
 > = {
   English: {
-    title: "Hi, I am Edmund Lin Zhenming!",
+    prefix: "I'm",
+    title: "Edmund",
     subtitle: "Fintech is my game.",
   },
   Chinese: {
-    title: "你好, 我是林震铭!",
+    prefix: "我是",
+    title: "Edmund!",
     subtitle: "我是一名金融科技爱好者。",
   },
   Malay: {
-    title: "Hai, saya Edmund Lin Zhenming!",
+    prefix: "Saya",
+    title: "Edmund!",
     subtitle: "Saya adalah seorang penggemar teknologi finansial.",
   },
 };
@@ -39,5 +42,7 @@ export const CompanyLogos: Array<{ src: string; alt: string; link: string }> = [
     link: "https://www.mono.sg/",
   },
 ];
+
+export const backgroundImageUrl: string = "";
 
 export default HeroContent;
