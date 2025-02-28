@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="flex justify-center w-screen">
       <body
-        className={`${poppins.className} w-full mx-4 sm:mx-8 md:mx-12 lg:mx-16 xl:mx-32 2xl:mx-48 bg-[#fefbe6] dark:bg-[#171602] text-black dark:text-white`}
+        className={`${poppins.className} w-full bg-[#fefbe6] dark:bg-[#171602] text-black dark:text-white overflow-x-hidden`}
       >
         <ThemeProvider>{children}</ThemeProvider>
       </body>

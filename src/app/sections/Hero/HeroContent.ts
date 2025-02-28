@@ -4,17 +4,17 @@ export const HeroContent: Record<
 > = {
   English: {
     prefix: "I'm",
-    title: "Edmund",
+    title: "Edmund, Lin Zhenming",
     subtitle: "Fintech is my game.",
   },
   Chinese: {
     prefix: "我是",
-    title: "Edmund!",
+    title: "埃德蒙, 林震铭",
     subtitle: "我是一名金融科技爱好者。",
   },
   Malay: {
     prefix: "Saya",
-    title: "Edmund!",
+    title: "Edmund, Lin Zhenming",
     subtitle: "Saya adalah seorang penggemar teknologi finansial.",
   },
 };

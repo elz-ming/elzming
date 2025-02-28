@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import Header from "@/sections/Header/Header"; // Import Header
 import Hero from "@/sections/Hero/Hero";
-// import About from "@/sections/About/About";
+import About from "@/sections/About/About";
 // import Education from "@/sections/Education/Education";
 // import Experience from "@/sections/Experience/Experience";
 // import Skills from "@/sections/Skills/Skills";
@@ -30,23 +30,23 @@ export default function Home() {
 
       <main
         id="scroll-container"
-        className="flex flex-col w-full h-full snap-y snap-mandatory scroll-smooth gap-[5vh]"
+        className="flex flex-col w-full h-full snap-y snap-mandatory scroll-smooth gap-[5vh] overlow-x-hidden dark:bg-[#242424]"
       >
         <Hero language={language} />
 
-        {/* <About language={language} />
+        <About language={language} />
 
-        <Education />
+        {/* <Education /> */}
 
-        <Experience />
+        {/* <Experience /> */}
 
-        <Skills />
+        {/* <Skills /> */}
 
-        <Projects />
+        {/* <Projects /> */}
 
-        <Testimonials language={language} />
+        {/* <Testimonials language={language} /> */}
 
-        <Contact /> */}
+        {/* <Contact /> */}
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
     </>
