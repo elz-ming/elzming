@@ -19,3 +19,81 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+header,
+section,
+footer {
+  width: 100%;
+  display: flex;
+}
+
+@layer utilities {
+  .container {
+    @apply w-full h-full grid grid-cols-4 sm:grid-cols-8 xl:grid-cols-12 gap-2 sm:gap-4 xl:gap-6;
+  }
+
+  .container-header {
+    @apply w-full h-[10%] flex justify-center items-center mx-4 sm:mx-8 lg:mx-16 xl:mx-32 2xl:mx-48;
+  }
+}
+
+@layer base {
+  header,
+  section,
+  footer {
+    @apply px-4 sm:px-8 md:px-12 lg:px-16 xl:px-32 2xl:px-48;
+  }
+
+  section {
+    @apply shadow-md dark:shadow-gray-600;
+  }
+
+  h1 {
+    @apply text-[32px] sm:text-[40px] xl:text-[48px];
+  }
+
+  h2 {
+    @apply text-[24px] sm:text-[28px] xl:text-[32px];
+  }
+
+  h3 {
+    @apply text-[20px] sm:text-[24px] xl:text-[28px];
+  }
+
+  h4 {
+    @apply text-[18px] sm:text-[20px] lg:text-[24px];
+  }
+
+  p {
+    @apply text-[16px] sm:text-[18px] xl:text-[20px];
+  }
+
+  .subtitle {
+    @apply text-[14px] sm:text-[16px] xl:text-[18px];
+  }
+}
+
+/* Thin scrollbar that only appears on overflow */
+.conditional-scrollbar {
+  overflow-y: auto; /* Enables scrollbar only when needed */
+  scrollbar-width: thin; /* Thin scrollbar for Firefox */
+  scrollbar-color: #b3b3b3 transparent; /* Thumb & Track color */
+}
+
+/* Chrome, Safari, and Edge */
+.conditional-scrollbar::-webkit-scrollbar {
+  width: 6px; /* Thin scrollbar width */
+}
+
+.conditional-scrollbar::-webkit-scrollbar-track {
+  background: transparent; /* Invisible track */
+}
+
+.conditional-scrollbar::-webkit-scrollbar-thumb {
+  background: #b3b3b3; /* Scrollbar color */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.conditional-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1; /* Slightly darker on hover */
+}
