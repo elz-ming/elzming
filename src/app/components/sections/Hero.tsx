@@ -11,20 +11,29 @@ export default function Hero() {
     return (
       <div
         className="
+        w-full h-auto
         md:h-16 2xl:h-20
-        flex flex-col justify-center items-center
+        flex flex-col justify-between items-center
         md:items-end
       "
       >
         <span
           className="
-          font-semibold text-4xl
+          flex
+          font-semibold text-md
           md:text-2xl 2xl:text-4xl
         "
         >
           {value}
         </span>
-        <span className="text-2xl md:text-lg 2xl:text-2xl">{label}</span>
+        <span
+          className="
+          flex
+          text-sm
+          md:text-lg 2xl:text-2xl"
+        >
+          {label}
+        </span>
       </div>
     );
   }
@@ -33,7 +42,7 @@ export default function Hero() {
     <div
       className={`
         w-full h-screen z-0 relative 
-        flex flex-col justify-start items-start 
+        flex flex-col justify-start
         md:flex-row md:justify-center
         md:px-16 2xl:px-32
       `}
@@ -45,7 +54,7 @@ export default function Hero() {
           md:w-[30%] md:h-full md:order-1
           flex flex-col gap-2
           md:gap-4 2xl:gap-8
-          px-8 py-4 
+          px-8 py-2 
           md:px-0 md:pb-0 md:pr-12 md:pt-[20vh] 2xl:pr-16
         `}
       >
@@ -58,7 +67,7 @@ export default function Hero() {
         >
           <span
             className="
-            text-lg whitespace-nowrap
+            text-md whitespace-nowrap
             md:text-2xl
             2xl:text-4xl
             "
@@ -78,7 +87,7 @@ export default function Hero() {
         >
           <span
             className="
-            text-2xl whitespace-wrap font-[cursive]
+            text-lg whitespace-wrap font-[cursive]
             md:text-4xl 2xl:text-6xl
             "
           >
@@ -95,7 +104,7 @@ export default function Hero() {
         >
           <span
             className="
-            text-md whitespace-wrap
+            text-sm whitespace-wrap
             md:text-lg
             2xl:text-2xl
             "
@@ -142,7 +151,7 @@ export default function Hero() {
       {/* Middle */}
       <div
         className={`
-          w-full h-[55%] bg-[#FEE575] overflow-hidden order-1 
+          w-full h-auto bg-[#FEE575] overflow-hidden order-1 
           md:w-[40%] md:h-[85%] md:order-2
           2xl:h-[80%]
           flex items-end
@@ -162,11 +171,11 @@ export default function Hero() {
       {/* Right */}
       <div
         className="
-        w-full order-3
+        w-full h-[15%] order-3
         md:w-[30%] md:h-full
-        grid grid-rows-2 grid-cols-2 gap-4
+        grid grid-rows-2 grid-cols-2 gap-2
         md:flex md:flex-col md:items-end md:gap-4 2xl:gap-8
-        px-8 py-4
+        px-8 py-2 
         md:px-0 md:pt-[20vh] md:pb-0
         "
       >
