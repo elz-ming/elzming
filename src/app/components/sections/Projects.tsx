@@ -1,19 +1,22 @@
 import Image from "next/image";
+import Link from "next/link";
 import { projectData } from "@/app/data/ProjectData";
 
 export default function Projects() {
   // === Reusable ProjectCard Component ===
   function ProjectCard({
+    id,
     title,
     description,
     imageSrc,
   }: {
+    id: string;
     title: string;
     description: string;
     imageSrc: string;
   }) {
     return (
-      <div
+      <Link
         className="
 				w-full h-32 overflow-hidden
 				md:flex-1 md:h-full
@@ -23,6 +26,8 @@ export default function Projects() {
 				md:rounded-4xl
 				cursor-pointer hover:scale-105
 				"
+        href={`/projects/${id}`}
+        key={id}
       >
         {/* Project Image */}
         <div
@@ -62,7 +67,7 @@ export default function Projects() {
             {description}
           </p>
         </div>
-      </div>
+      </Link>
     );
   }
 
@@ -83,6 +88,7 @@ export default function Projects() {
 				text-lg font-semibold
         md:text-2xl 2xl:text-4xl
 				py-2
+				md:py-4
 				"
       >
         <h1>Projects</h1>
@@ -95,11 +101,13 @@ export default function Projects() {
 				md:h-[80%]
 				flex flex-col gap-8
 				md:flex-row md:gap-12 2xl:gap-16
-				py-2"
+				py-2
+				md:py-4"
       >
         {projectData.map((project, index) => (
           <ProjectCard
             key={index}
+            id={project.id}
             title={project.title}
             description={project.description}
             imageSrc={project.imageSrc}
@@ -113,18 +121,21 @@ export default function Projects() {
 				w-full
 				md:h-[10%]
 				flex justify-center items-center
-				py-2"
+				py-2
+				md:py-4"
       >
-        <button
-          className="
+        <Link href="/projects">
+          <button
+            className="
            	bg-[#FEE575] 
             px-4 py-2 rounded-md
             font-bold
             cursor-pointer hover:scale-110
             "
-        >
-          See More
-        </button>
+          >
+            See More
+          </button>
+        </Link>
       </div>
     </section>
   );
