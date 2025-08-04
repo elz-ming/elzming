@@ -63,7 +63,7 @@ export default function Hero() {
             2xl:text-4xl
             "
           >
-            Hey, I'm Edmund
+            Hey, I&apos;m Edmund
           </span>
         </div>
 
