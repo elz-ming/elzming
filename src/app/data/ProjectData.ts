@@ -4,6 +4,7 @@ export type Project = {
   description: string;
   imageSrc: string;
   detail?: string; // full write-up for /[id]/page
+  href?: string; // optional: if provided, overrides the default route
 };
 
 export const projectData: Project[] = [
@@ -24,6 +25,7 @@ export const projectData: Project[] = [
     imageSrc: "/verizkp.png",
     detail:
       "VeriZKP is a privacy-first credential verification system built using Zero-Knowledge Proofs (ZKPs). It allows students to prove that they’ve completed a degree without revealing grades or specific modules. Employers get proof, students retain privacy.",
+    href: "https://youtu.be/yVlxf9BjzJQ",
   },
   {
     id: "milkscholar",
@@ -33,5 +35,6 @@ export const projectData: Project[] = [
     imageSrc: "/milkscholar.png",
     detail:
       "MilkScholar helps students access funding through micro-scholarships while gamifying academic and co-curricular progress. It promotes transparency, mentorship, and community-driven support to enhance educational equity.",
+    href: "https://youtu.be/IGgF4qUEOlE",
   },
 ];

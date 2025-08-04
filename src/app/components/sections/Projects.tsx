@@ -9,11 +9,13 @@ export default function Projects() {
     title,
     description,
     imageSrc,
+    href,
   }: {
     id: string;
     title: string;
     description: string;
     imageSrc: string;
+    href?: string;
   }) {
     return (
       <Link
@@ -26,7 +28,7 @@ export default function Projects() {
 				md:rounded-4xl
 				cursor-pointer hover:scale-105
 				"
-        href={`/projects/${id}`}
+        href={href ?? `/projects/${id}`}
         key={id}
       >
         {/* Project Image */}
@@ -111,6 +113,7 @@ export default function Projects() {
             title={project.title}
             description={project.description}
             imageSrc={project.imageSrc}
+            href={project.href}
           />
         ))}
       </div>

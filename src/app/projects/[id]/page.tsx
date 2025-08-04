@@ -1,19 +1,14 @@
 "use client";
 
 import { projectData } from "@/app/data/ProjectData";
-import { notFound, useRouter } from "next/navigation";
+import { notFound, useRouter, useParams } from "next/navigation";
 import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
 
-type Params = {
-  params: {
-    id: string;
-  };
-};
-
-export default function ProjectDetailPage({ params }: Params) {
+export default function ProjectDetailPage() {
+  const { id } = useParams();
   const router = useRouter();
-  const project = projectData.find((p) => p.id === params.id);
+  const project = projectData.find((p) => p.id === id);
 
   if (!project) return notFound();
 
