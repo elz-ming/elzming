@@ -39,9 +39,10 @@ export default function Hero() {
   }
 
   return (
-    <div
+    <section
       className={`
-        w-full h-screen z-0 relative 
+        w-full h-auto z-0 relative
+        md:h-screen 
         flex flex-col justify-start
         md:flex-row md:justify-center
         md:px-16 2xl:px-32
@@ -184,6 +185,6 @@ export default function Hero() {
         <StatBlock value="10+" label="Projects" />
         <StatBlock value="6" label="Leadership roles" />
       </div>
-    </div>
+    </section>
   );
 }
