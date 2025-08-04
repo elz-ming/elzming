@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Hero from "./components/sections/Hero";
-import Education from "./components/sections/Education";
+// import Education from "./components/sections/Education";
+import Projects from "./components/sections/Projects";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <main className="w-full h-full">
         <Hero />
         {/* <Education /> */}
+        <Projects />
       </main>
     </>
   );
