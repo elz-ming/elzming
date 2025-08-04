@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   function StatBlock({
@@ -125,27 +126,35 @@ export default function Hero() {
           md:text-lg 2xl:text-2xl
           "
         >
-          <button
-            className="
-            flex-1 bg-[#FEE575] 
-            py-2 rounded-md
-            font-bold
-            cursor-pointer hover:scale-110
+          <Link className="flex-1 " href="#contact">
+            <button
+              className="
+              w-full bg-[#FEE575] 
+              py-2 rounded-md border-3 border-[#FEE575] 
+              2xl:border-4
+              font-bold
+              cursor-pointer hover:scale-110
             "
+            >
+              Talk to Me
+            </button>
+          </Link>
+          <Link
+            className="flex-1"
+            href="https://drive.google.com/file/d/1tzwYiJEIUbLJCLfyCb_7dWriXOiZ-vkc/view?usp=sharing"
           >
-            Talk to Me
-          </button>
-          <button
-            className="
-            flex-1
-            border-3 border-[#FEE575] rounded-md
-            2xl:border-4
-            text-[#FEE575] font-bold
-            cursor-pointer hover:scale-110
-            "
-          >
-            Download CV
-          </button>
+            <button
+              className="
+              w-full
+              py-2 rounded-md border-3 border-[#FEE575] 
+              2xl:border-4
+              text-[#FEE575] font-bold
+              cursor-pointer hover:scale-110
+              "
+            >
+              View Resume
+            </button>
+          </Link>
         </div>
       </div>
 
