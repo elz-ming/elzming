@@ -45,18 +45,18 @@ export default function Hero() {
         md:h-screen 
         flex flex-col justify-start
         md:flex-row md:justify-center
-        md:px-16 2xl:px-32
+        md:px-24 2xl:px-32
       `}
     >
       {/* Left */}
       <div
         className={`
           w-full order-2
-          md:w-[30%] md:h-full md:order-1
+          md:w-[40%] md:h-full md:order-1
           flex flex-col gap-2
           md:gap-4 2xl:gap-8
           px-8 py-2 
-          md:px-0 md:pb-0 md:pr-12 md:pt-[20vh] 2xl:pr-16
+          md:px-0 md:pb-0 md:pr-24 md:pt-[20vh] 2xl:pr-32
         `}
       >
         {/* Hey, I'm Edmund */}
@@ -130,7 +130,7 @@ export default function Hero() {
             flex-1 bg-[#FEE575] 
             py-2 rounded-md
             font-bold
-            cursor-pointer hover:scale-105
+            cursor-pointer hover:scale-110
             "
           >
             Talk to Me
@@ -173,7 +173,7 @@ export default function Hero() {
       <div
         className="
         w-full h-[15%] order-3
-        md:w-[30%] md:h-full
+        md:w-[20%] md:h-full
         grid grid-rows-2 grid-cols-2 gap-2
         md:flex md:flex-col md:items-end md:gap-4 2xl:gap-8
         px-8 py-2 
