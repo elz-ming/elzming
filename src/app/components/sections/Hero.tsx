@@ -42,10 +42,11 @@ export default function Hero() {
   return (
     <section
       className={`
-        w-full h-auto z-0 relative
-        md:h-screen 
+        w-full z-0 relative bg-white
+        md:aspect-[16/9]
         flex flex-col justify-start
         md:flex-row md:justify-center
+        text-black
         md:px-24 2xl:px-32
       `}
     >
@@ -136,7 +137,7 @@ export default function Hero() {
               cursor-pointer hover:scale-110
             "
             >
-              Talk to Me
+              Let&apos;s Connect!
             </button>
           </Link>
           <Link
@@ -148,7 +149,7 @@ export default function Hero() {
               w-full
               py-2 rounded-md border-3 border-[#FEE575] 
               2xl:border-4
-              text-[#FEE575] font-bold
+              font-bold
               cursor-pointer hover:scale-110
               "
             >
@@ -185,7 +186,7 @@ export default function Hero() {
         md:w-[20%] md:h-full
         grid grid-rows-2 grid-cols-2 gap-2
         md:flex md:flex-col md:items-end md:gap-4 2xl:gap-8
-        px-8 py-2 
+        px-8 py-2 border-none
         md:px-0 md:pt-[20vh] md:pb-0
         "
       >
