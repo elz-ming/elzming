@@ -20,12 +20,13 @@ export default function Projects() {
     return (
       <Link
         className="
-				w-full h-32 overflow-hidden
+				w-full h-32 overflow-hidden bg-white
 				md:flex-1 md:h-full
 				flex flex-row
 				md:flex-col
 				rounded-xl shadow-[4px_4px_4px_rgba(254,229,117,0.75)]
 				md:rounded-4xl
+        text-black
 				cursor-pointer hover:scale-105
 				"
         href={href ?? `/projects/${id}`}
@@ -36,7 +37,6 @@ export default function Projects() {
           className="
 					relative w-auto h-full aspect-square
 					md:w-full md:h-auto
-
 					"
         >
           <Image src={imageSrc} alt={title} fill className="object-cover" />
@@ -76,10 +76,11 @@ export default function Projects() {
   return (
     <section
       className="
-      w-full h-auto z-0
-			md:h-screen
-			px-8 
+      w-full h-auto z-0 bg-white
+			md:aspect-[16/9]
+			px-8 border-none
 			md:px-24 2xl:px-32
+      text-black
 			"
     >
       {/* Title */}
@@ -87,8 +88,8 @@ export default function Projects() {
         className="
 				w-full h-[10%]
 				flex justify-center items-center
-				text-lg font-semibold
-        md:text-2xl 2xl:text-4xl
+				text-2xl font-semibold
+        2xl:text-4xl
 				py-2
 				md:py-4
 				"
