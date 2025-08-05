@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="w-full h-full">
+      <main className="w-full h-full bg-white">
         <Hero />
         {/* <Education /> */}
         <Projects />

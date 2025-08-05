@@ -36,11 +36,12 @@ export default function Header() {
     >
       <div
         className="
-        bg-white
+        bg-white 
+        py-1/2 px-2 border-2 border-black rounded-md
+        2xl:py-1 md:border-4 2xl:border-6
         text-lg font-semibold
         md:text-xl 2xl:text-4xl
-        py-1/2 px-2 border-2 rounded-md 
-        2xl:py-1 md:border-4 2xl:border-6"
+        text-black"
       >
         ELZ MING
       </div>
